@@ -1,0 +1,9 @@
+*.swp
+*.o
+*.iso
+*.swo
+*.orig
+*.elf
+*.out
+./kot
+
