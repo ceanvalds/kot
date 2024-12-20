@@ -2,14 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char **argv) {
+#include "log.h"
+
+int start_compile(int argc, char **argv)
+{
         if (argc < 2) {
                 printf("kot: no input files\n");
                 return -1;
         }
-        else {
-                return 0;
+        else if (argc > 2) {
+                printf("cannot compile with more than 2 arguments\n");
+                return -1; 
         }
+        
+        logfile("starting compile process\n");
+        printf("work in progress lol\n");
+}
+
+int main(int argc, char **argv) {
+        start_compile(argc, argv);
 
         return 0;
 }
