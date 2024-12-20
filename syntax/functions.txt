@@ -1,0 +1,41 @@
+
+// Function return type is specified after the declaration using '->'
+// example: The function 'foo' returns 'void' (U0)
+
+fn foo() -> U0 {
+        // ...
+}
+
+// if a function returns void you are not forced to use '-> U0'
+// you can just leave it as:
+
+fn foo1() {
+        // this will automatically return 'void' (U0)
+}
+
+// Function arguments are specified similarly to C or C++,
+// with type annotations following each argument name
+
+// example: The function 'bar' takes two U32 arguments ('arg1' and 'arg2')
+// and returns an I64
+
+fn bar(U32 arg1, U32 arg2) -> I64 {
+        // example
+        return arg1 + arg2;
+}
+
+// calling functions is same as in C
+
+fn OtherFunction() {
+        // this will make 'test' equal to 132 
+        I64 test = bar(34, 98);        
+
+        // this will call the function and execute the code inside it with no arguments 
+        foo();
+}
+
+// function 'main' will always be the entry point
+
+fn main() {
+        //...
+}

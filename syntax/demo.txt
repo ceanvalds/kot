@@ -1,0 +1,12 @@
+import package
+
+// entry point
+
+global U8* msg = "Hello World!";
+
+fn main() -> I64 {
+        // prints 'msg'
+        "%s", msg;
+        return 0;
+}
+

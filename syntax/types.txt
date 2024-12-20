@@ -1,0 +1,37 @@
+
+// U0, I8, U8, I16, U16, I32, U32, I64, U64, F64 
+
+/*
+        U0 -> void
+        I8 -> signed char
+        U8 -> unsigned char
+        I16 -> signed short
+        U16 -> unsigned short
+        I32 -> signed int
+        U32 -> unsigned int
+        I64 -> long long
+        U64 -> unsigned long long
+        F64 -> double
+*/
+
+
+// variables are defined as in C
+
+        I8 I8var = 3;
+        U8 U8var = 3;
+        I16 I16var = 3;
+        //etc...
+        F64 F64var = 3.1459;
+
+// defining a variable outside a function will throw an error.
+// to define a global variable you use the 'global' keyword
+
+global I64 GlobalVariable = 42;
+
+fn FooBar() -> U0
+{
+        // you can use 'GlobalVariable' however you want
+        GlobalVariable = 13 * 2;
+
+        // variable defined in a specific function are LOCAL variables, and can not be used outside of the parent function 
+}
